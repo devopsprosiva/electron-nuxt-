@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 w-1/3">
+  <div class="bg-green-600 w-full">
     <echart :options="areaChart" autoresize />
   </div>
 </template>
@@ -75,6 +75,6 @@ export default {
 
 <style>
 .echarts {
-  @apply w-full h-full ;
+  @apply w-full h-full bg-gray-800;
 }
 </style>
