@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "echarts": "^4.7.0",
+    "resize-detector": "^0.2.1",
     "vue-echarts": "4.1.0"
   }
 }

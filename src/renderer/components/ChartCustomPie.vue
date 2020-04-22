@@ -1,6 +1,6 @@
 <template>
   <div class="chart-custom-pie">
-    <echart :options="customPieChart" />
+    <echart :options="customPieChart" autoresize="true" />
   </div>
 </template>
 

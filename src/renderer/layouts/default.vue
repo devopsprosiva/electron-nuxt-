@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <div class="bg-gray-800 overflow-hidden sm:rounded-md">
       <div class="flex bg-blue-800 mx-3 my-5 sm:rounded-lg">
         <div class="bg-gray-900 mr-3 my-3 px-4 py-5 rounded-lg w-1/4">
@@ -34,7 +33,6 @@
           />
         </div>
       </div>
-
     </div>
   </div>
 </template>

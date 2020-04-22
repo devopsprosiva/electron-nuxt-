@@ -1,6 +1,6 @@
 <template>
   <div class="chart-bar">
-    <echart :options="barChart" />
+    <echart :options="barChart" autoresize="true" />
   </div>
 </template>
 
@@ -57,7 +57,7 @@ export default {
           {
             name: this.seriesName1,
             type: 'bar',
-            data: [5, 20, 36, 10, 10, 20],
+            data: [5, 20, 36, 10, 10, 20]
           }
         ]
       }

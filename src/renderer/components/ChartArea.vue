@@ -1,6 +1,6 @@
 <template>
   <div class="chart-area">
-    <echart :options="areaChart" />
+    <echart :options="areaChart" autoresize="true" />
   </div>
 </template>
 
@@ -64,7 +64,7 @@ export default {
         series: [{
           data: [820, 932, 901, 934, 1290, 1330, 1320],
           type: 'line',
-          areaStyle: {},
+          areaStyle: {}
         }]
       }
     }

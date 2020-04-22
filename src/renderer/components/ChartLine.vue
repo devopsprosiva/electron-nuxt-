@@ -1,6 +1,6 @@
 <template>
   <div class="chart-line">
-    <echart :options="lineChart" />
+    <echart :options="lineChart" autoresize="true" />
   </div>
 </template>
 
@@ -57,7 +57,7 @@ export default {
           {
             name: this.seriesName1,
             type: 'line',
-            data: [5, 20, 36, 10, 10, 20],
+            data: [5, 20, 36, 10, 10, 20]
           }
         ]
       }

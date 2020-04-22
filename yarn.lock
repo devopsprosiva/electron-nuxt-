@@ -8072,6 +8072,11 @@ resize-detector@^0.1.10:
   resolved "https://registry.yarnpkg.com/resize-detector/-/resize-detector-0.1.10.tgz#1da3f961aa5f914ccbcfd3752d52fd45beeb692c"
   integrity sha512-iLcXC8A6Fb0DfA+TRiywrK/0A22bFqkhntjMJMEzXDA4XkcEkfwpNbv7W8iewUiD0xYIaeiXOfiEehTqGKsUFw==
 
+resize-detector@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/resize-detector/-/resize-detector-0.2.1.tgz#78cb108d0b772fdbd9f7ddd08c11536cd511a86a"
+  integrity sha512-POdKmMzcyXuYDqaXmnYszTbr2Ce5lBH+w+n0thPTwxnoBYaZ1iUqRKlTc74ATS/nl+BJhXe7JYwyKL9bYwgGpg==
+
 resolve-from@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-3.0.0.tgz#b22c7af7d9d6881bc8b6e653335eebcb0a188748"
