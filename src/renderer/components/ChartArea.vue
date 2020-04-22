@@ -1,6 +1,6 @@
 <template>
   <div class="chart-area">
-    <echart :options="areaChart" autoresize="true" />
+    <echart :options="areaChart" v-bind:autoresize="true" />
   </div>
 </template>
 
@@ -74,8 +74,7 @@ export default {
 
 <style>
 .echarts {
-  @apply w-full h-full;
-/* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
 }
 </style>

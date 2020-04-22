@@ -1,6 +1,6 @@
 <template>
   <div class="chart-bar">
-    <echart :options="barChart" autoresize="true" />
+    <echart :options="barChart" v-bind:autoresize="true" />
   </div>
 </template>
 
@@ -65,3 +65,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.echarts {
+  width: 100%;
+  height: 100%;
+}
+</style>

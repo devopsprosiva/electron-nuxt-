@@ -1,6 +1,6 @@
 <template>
   <div class="chart-custom-pie">
-    <echart :options="customPieChart" autoresize="true" />
+    <echart :options="customPieChart" v-bind:autoresize="true" />
   </div>
 </template>
 
@@ -110,3 +110,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.echarts {
+  width: 100%;
+  height: 100%;
+}
+</style>
