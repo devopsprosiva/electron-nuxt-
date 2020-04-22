@@ -1,6 +1,6 @@
 <template>
   <div class="chart-line">
-    <echart :options="lineChart" v-bind:autoresize="true" />
+    <echart :options="lineChart" :autoresize="true" />
   </div>
 </template>
 

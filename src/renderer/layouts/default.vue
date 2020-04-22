@@ -1,59 +1,80 @@
 <template>
-  <div>
-    <div class="bg-gray-800 overflow-hidden sm:rounded-md">
-      <div class="flex bg-blue-800 mx-3 my-5 sm:rounded-lg">
-        <div class="bg-gray-900 mr-3 my-3 px-4 py-5 rounded-lg w-1/4">
-          <chart-line
-            y-axis-label-formatter="{value}"
-            title="ECharts entry example"
-            series-name1="Sales"
-          />
-        </div>
-        <div class="bg-gray-900 my-3 px-4 py-5 sm:p-6 rounded-lg w-1/4">
-          <chart-bar
-            y-axis-label-formatter="{value}"
-            title="ECharts entry example"
-            series-name1="Sales"
-          />
-        </div>
-        <div class="bg-gray-900 ml-3 my-3 px-4 py-5 sm:p-6 rounded-lg w-1/4">
-          <chart-custom-pie
-            y-axis-label-formatter="{value}"
-            title="ECharts entry example"
-            series-name1="Custom Pie"
-          />
-        </div>
-      </div>
-      <div class="flex bg-red-800 mx-3 my-5 sm:rounded-lg">
-        <div class="bg-gray-900 my-3 px-4 py-5 sm:p-6 rounded-lg w-full">
-          <chart-area
-            y-axis-label-formatter="{value}"
-            title="ECharts entry example"
-            series-name1="Area Chart"
-          />
-        </div>
-      </div>
-    </div>
+  <div class="bg-gray-900 w-1/3">
+    <echart :options="areaChart" autoresize />
   </div>
 </template>
 
 <script>
 
-import ChartLine from '~/components/ChartLine'
-import ChartBar from '~/components/ChartBar'
-import ChartArea from '~/components/ChartArea'
-import ChartCustomPie from '~/components/ChartCustomPie'
-
 export default {
-  components: {
-    ChartLine,
-    ChartBar,
-    ChartArea,
-    ChartCustomPie
+  props: {
+    seriesName1: String,
+    seriesName2: String,
+    seriesName3: String,
+    seriesName4: String,
+    seriesName5: String,
+    seriesName6: String,
+    title: String,
+    yAxisMin: Number,
+    yAxisMax: Number,
+    yAxisLabelFormatter: String
+  },
+  data () {
+    return {
+      areaChart: {
+        legend: {
+          type: 'plain'
+        },
+        title: {
+          text: this.Title
+        },
+        grid: {
+          show: false
+        },
+        // width: '100%',
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+            type: 'cross',
+            crossStyle: 'shadowBlur',
+            opacity: '1'
+          }
+        },
+        xAxis: {
+          type: 'category',
+          boundaryGap: false,
+          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+          splitLine: {
+            show: true,
+            lineStyle: {
+              opacity: 0.1
+            }
+          }
+        },
+        yAxis: {
+          type: 'value',
+          min: 0,
+          // max: 100,
+          splitLine: {
+            show: true,
+            lineStyle: {
+              opacity: 0.1
+            }
+          }
+        },
+        series: [{
+          data: [820, 932, 901, 934, 1290, 1330, 1320],
+          type: 'line',
+          areaStyle: {}
+        }]
+      }
+    }
   }
 }
 </script>
 
 <style>
-
+.echarts {
+  @apply w-full h-full ;
+}
 </style>

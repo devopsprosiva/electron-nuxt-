@@ -1,6 +1,6 @@
 <template>
-  <div class="chart-area">
-    <echart :options="areaChart" v-bind:autoresize="true" />
+  <div>
+    <echart :options="areaChart" :autoresize="true" />
   </div>
 </template>
 
